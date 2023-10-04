@@ -1,26 +1,27 @@
 {
-  "name": "vue3-json-schema-form",
-  "version": "0.1.0",
+  "name": "json-vue-app",
   "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-errors": "^3.0.0",
+    "ajv-formats": "^2.1.1",
+    "ajv-i18n": "^4.2.0",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "jss": "^10.10.0",
+    "jss-preset-default": "^10.10.0",
+    "vue": "^3.3.4",
+    "vue-jss": "^0.0.4"
   },
   "devDependencies": {
-    "@types/jest": "^27.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/parser": "^5.4.0",
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-plugin-typescript": "~5.0.0",
-    "@vue/cli-plugin-unit-jest": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
+    "@vue/babel-plugin-jsx": "^1.1.5",
     "@vue/eslint-config-typescript": "^9.1.0",
     "@vue/test-utils": "^2.0.0-0",
     "@vue/vue3-jest": "^27.0.0-alpha.1",
@@ -31,11 +32,12 @@
     "eslint-plugin-vue": "^8.0.3",
     "jest": "^27.0.5",
     "lint-staged": "^11.1.2",
+    "monaco-editor": "^0.43.0",
     "prettier": "^2.4.1",
     "ts-jest": "^27.0.4",
-    "typescript": "~4.5.5"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-monaco-editor": "^1.1.0",
+    "vue-tsc": "^1.8.5"
   }
 }
